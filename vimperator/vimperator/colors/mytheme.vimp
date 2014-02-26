@@ -1,0 +1,7 @@
+" ==Vimperator_Color_Scheme==
+" name: mytheme
+" ==MyTheme_Colorscheme_Settings==
+hi StatusLine           height: 10px !important;
+style -name statusbar chrome://* <<EOM
+statusbarpanel > * { margin: 0 !important; padding: 0 2px 0 0 !important; }
+EOM

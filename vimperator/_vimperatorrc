@@ -1,0 +1,18 @@
+"3.7.1 (created: 2013/05/22 20:32:57)
+
+command! ftp javascript loadFireFTP()
+command! gmail javascript gmailwatcherBrowser.openMail()
+command! rss javascript Brief.open(0)
+set hintchars=hjklasdfgyuiopqwertnmzxcvb
+set noscrollbars
+set tabnumbers
+set defsearch=gg
+set gui=noaddons,nobookmarks,nomenu,nonavigation,notabs
+
+style! -name=statusbar chrome://* <<EOF
+#status-bar statusbarpanel { padding: 0 1px !important; }
+statusbarpanel > * { margin: 0 !important; padding: 0 2px 0 0 !important; }
+EOF
+source! "C:\\Users\\shu\\_vimperatorrc.local"
+
+" vim: set ft=vimperator:
