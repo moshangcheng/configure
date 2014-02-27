@@ -1,0 +1,15 @@
+hi TabLine ctermfg=Blue ctermbg=Yellow
+
+set ts=4 sw=4
+set smartindent
+
+set pastetoggle=<F3>
+
+filetype plugin on
+syntax on
+
+" call bash from vim
+set shell=sh\ --login\ -i
+
+nmap <F2> <ESC>:sh<CR>
+
