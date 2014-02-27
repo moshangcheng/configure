@@ -4,7 +4,7 @@
 
 get all projects
 
-    find -type d -maxdepth 2 -mindepth 2 -exec sh -c "cd {} && git config --get remote.origin.url " \; > project_list.txt
+    for p in $(find /d/dev/src/github.com -type d -maxdepth 2 -mindepth 2 | sort); do pushd "$p" > /dev/null; git config --get remote.origin.url; popd > /dev/null; done
 
 
 ---
